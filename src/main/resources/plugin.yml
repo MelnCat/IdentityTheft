@@ -1,0 +1,29 @@
+name: IdentityTheft
+version: '${version}'
+main: dev.melncat.identitytheft.IdentityTheft
+api-version: '1.13'
+author: MelnCat
+commands:
+  identitytheft:
+    aliases: it
+    description: The main command.
+    permission: identitytheft.command.identitytheft
+permissions:
+  identitytheft.command.identitytheft:
+    description: Allows using the root command.
+    default: true
+  identitytheft.command.identitytheft.reload:
+    description: Allows reloading the plugin.
+    default: op
+  identitytheft.command.identitytheft.become:
+    description: Allows changing identity.
+    default: op
+  identitytheft.command.identitytheft.set:
+    description: Allows changing the identity of others.
+    default: op
+  identitytheft.command.identitytheft.reset:
+    description: Allows resetting your identity.
+    default: true
+  identitytheft.command.identitytheft.reset.others:
+    description: Allows resetting the identity of others.
+    default: op
